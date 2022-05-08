@@ -1,0 +1,11 @@
+<div class="form-container " [formGroup]="form">
+  <div class="comment-box">
+    <label for="name">Name</label>
+    <input id="name" formControlName="name">
+    <label for="comment">Comment</label>
+    <textarea formControlName="comment" id="comment" class="input"></textarea>
+    <div class="btn-position">
+      <button class="btn" (click)="pushButton()">Send</button>
+    </div>
+  </div>
+</div>

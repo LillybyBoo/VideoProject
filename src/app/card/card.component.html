@@ -1,0 +1,17 @@
+<div class="rounded-xl shadow-xl">
+  <video class="rounded-t-xl  w-full h-40 object-cover"
+         [src]="data.videoUrl"
+         controls
+         preload="metadata"
+         poster="{{data.poster}}"></video>
+  <div class="flex flex-col p-6">
+
+    <h2 class="text-xl font-bold truncate mt-1">{{data.title}}</h2>
+    <p class="text-base text-gray-600 mt-1">{{data.description}}</p>
+    <div class="flex flex-row mt-3 items-center justify-start">
+      <app-comments class="w-20"></app-comments>
+    </div>
+  </div>
+
+</div>
+
